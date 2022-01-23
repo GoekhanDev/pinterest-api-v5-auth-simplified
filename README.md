@@ -20,8 +20,8 @@ A easier and faster way to get the access token for the Pinterest v5 API.
  "refresh_token": "{a refresh token string prefixed with 'pinr'}",
  "response_type": "authorization_code",
  "token_type": "bearer",
- "expires_in": 2592000,
- "refresh_token_expires_in": 31536000,
+ "expires_in": "access token expiry: int",
+ "refresh_token_expires_in": "refresh token expiry: int",
  "scope": "scopes"
  }
 ```
