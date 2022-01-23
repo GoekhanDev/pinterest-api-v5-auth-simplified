@@ -22,7 +22,7 @@ A easier and faster way to get the access token for the Pinterest v5 API.
  "token_type": "bearer",
  "expires_in": 2592000,
  "refresh_token_expires_in": 31536000,
- "scope": "boards:read boards:write pins:read"
+ "scope": "scopes"
  }
 ```
 
