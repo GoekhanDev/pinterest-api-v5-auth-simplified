@@ -26,7 +26,7 @@ class pinterest():
 
         response = requests.post('https://api.pinterest.com/v5/oauth/token', headers=headers, data=data)
 
-        input(response.text)
+        return response.json()
 
     def get_code(self, url: str):
 
@@ -117,4 +117,8 @@ class pinterest():
             if response.status_code != 200:
                 return response.json()
 
-            self.get_token(self.get_code(response.url), client_id, client_secret)
+            try:
+                result = self.get_token(self.get_code(response.url), client_id, client_secret)
+            except Exception as E: print(f"Error: {E}! Restarting..."); time.sleep(3); pinterest()
+
+            return result
