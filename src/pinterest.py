@@ -112,7 +112,7 @@ class pinterest():
                 'state': oauth_state,
             }
 
-            response = requests.get('https://www.pinterest.com/oauth/', params=params, allow_redirects=True)
+            response = requests.get('https://www.pinterest.com/oauth/', params=params)
 
             if response.status_code != 200:
                 return response.json()
