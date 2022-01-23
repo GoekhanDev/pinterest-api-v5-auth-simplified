@@ -60,7 +60,7 @@ class pinterest():
 
         return code
 
-    def get_cookies(self, email, password):
+    def get_cookies(self, email: str, password: str):
 
         chrome_options = Options()
         chrome_options.add_argument('--headless')
