@@ -1,5 +1,6 @@
 # pinterest-api-v5-auth-simplified
 A easier and faster way to get the access token for the Pinterest v5 API. 
+<br/>
 The request uri is set to localhost.
 
 ## Requirements
